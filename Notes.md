@@ -29,9 +29,14 @@ Using with Bun.js
 npm install -g bun
 
 bun --version
+
+bun <file path>
 ```
 
 ```
+import {serve} from 'bun';
+import { hostname } from 'os';
+
 serve({
     fetch(request){
         const url = new URL(request.url);
