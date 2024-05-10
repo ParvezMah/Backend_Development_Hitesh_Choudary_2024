@@ -27,6 +27,8 @@ Using with Bun.js
 npm install -g bun
 
 bun --version
+
+bun <file path>
 ```
 
 ```
