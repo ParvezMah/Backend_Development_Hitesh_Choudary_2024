@@ -1,0 +1,19 @@
+Key Responsibilities
+    Orchestration: Controllers act as the central hub that coordinates the interaction between different components. They handle incoming requests, process data, interact with models and databases, and ultimately generate appropriate responses.
+
+    Business Logic: Controllers often contain business logic specific to the application. This logic determines how data is processed, validated, and transformed before being sent to the database or returned to the client.   
+
+    API Definition: Controllers define the API endpoints and their corresponding HTTP methods (GET, POST, PUT, DELETE, etc.). They handle request parameters, body parsing, and error handling for each endpoint.
+
+    Response Formatting: Controllers are responsible for formatting the data into a suitable response format (JSON, XML, etc.) before sending it back to the client.
+    
+    Separation of Concerns: By separating business logic from routes and models, controllers promote better code organization, maintainability, and testability.
+
+
+Routes: Controllers are invoked based on incoming requests that match defined routes.
+
+Middlewares: Controllers can utilize middleware functions for tasks like authentication, authorization, logging, and error handling.   
+
+Models: Controllers interact with models to retrieve, create, update, or delete data from the database.
+
+Database: Controllers communicate with the database through models or data access layers to perform data operations
