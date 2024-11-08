@@ -69,7 +69,7 @@ userSchema.methods.isPasswordCorrect = async function (password) {
     return await bcrypt.compare(password, this.password)
 }
 
-// mongoose instance methods
+// mongoose custome instance methods
 userSchema.methods.generateAccessToken = function(){
     // short lived access token
     jwt.sign(
@@ -84,7 +84,7 @@ userSchema.methods.generateAccessToken = function(){
     )
 }
 
-// mongoose instance methods
+// mongoose custom instance methods
 userSchema.methods.generateRefreshToken = function(){
     // short lived access token
     jwt.sign(
